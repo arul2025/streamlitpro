@@ -16,7 +16,7 @@ if api_key:
     # --- User Inputs ---
     prompt = st.text_area("🧠 Enter your prompt:", "Write a haiku about the sunrise.")
     temperature = st.slider("🎨 Creativity (temperature)", 0.0, 1.0, 0.7, 0.1)
-    max_tokens = st.slider("🧾 Max Output Tokens", 50, 1000, 200, 50)
+    max_tokens = st.slider("🧾 Max Output Tokens", 50, 5000, 200, 50)
 
     # --- Generate Button ---
     if st.button("✨ Generate"):
